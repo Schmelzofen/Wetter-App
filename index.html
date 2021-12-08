@@ -4,15 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>Wetter</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <main>
-      <h1>Wetter App</h1>
-      <input type="text" name="Stadt" id="suche" />
-      <button>Suche</button>
-      <div id="output"></div>
+      <div class="head">
+        <h1>Wetter</h1>
+        <input type="text" name="Stadt" id="suche" placeholder="Stadt ..." />
+        <button>Suche</button>
+      </div>
+      <section id="output">
+        <div id="heute">
+          <h2 id="stadt">Berlin</h2>
+          <p id="temperatur">1°C</p>
+          <p id="status">Bewölkt</p>
+        </div>
+        <section id="wetter-uebersicht-heute"></section>
+        <section id="wetter-uebersicht-woche">
+          <ul>
+            <li>
+              <span>Mittwoch</span> <span>1°C</span>
+              <span
+                ><img
+                  src="https://openweathermap.org/img/wn/01n@2x.png"
+                  alt="Klarer Himmel"
+              /></span>
+            </li>
+            <li>
+              <span>Donnerstag</span> <span>0°C</span>
+              <span
+                ><img
+                  src="https://openweathermap.org/img/wn/04n@2x.png"
+                  alt="Bedeckt"
+              /></span>
+            </li>
+            <li>
+              <span>Freitag</span> <span>0°C</span>
+              <span
+                ><img
+                  src="https://openweathermap.org/img/wn/04n@2x.png"
+                  alt="Bedeckt"
+              /></span>
+            </li>
+            <li>
+              <span>Samstag</span> <span>0°C</span>
+              <span
+                ><img
+                  src="https://openweathermap.org/img/wn/04n@2x.png"
+                  alt="Überwiegend bewölkt"
+              /></span>
+            </li>
+            <li>
+              <span>Sonntag</span> <span>2°C</span>
+              <span
+                ><img
+                  src="https://openweathermap.org/img/wn/04n@2x.png"
+                  alt="Bedeckt"
+              /></span>
+            </li>
+          </ul>
+        </section>
+      </section>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
